@@ -1,0 +1,99 @@
+/*
+Pseudo Element: Phần tử giả
+
+- before, after (Bắt buộc phải có thuộc tính content)
+- first-letter
+- first-line
+- selection
+- placeholder
+
+Pseudo Class: Lớp giả (Hay còn gọi là trạng thái)
+- hover: Trỏ chuột
+- active: Bấm và giữ chuột
+- focus: Chỉ có tác dụng với form
+- first-child: Phần tử con đầu tiên
+- last-child: Phần tử con cuối cùng
+- first-of-type
+- last-of-type
+- nth-child
+- nth-of-type
+- not
+- checked
+- disabled
+- valid
+*/
+
+/* h2::before {
+  content: "A";
+}
+h2::after {
+  content: "B";
+}
+p::first-letter {
+  color: red;
+}
+p::first-line {
+  color: green;
+}
+p::selection {
+  background: black;
+  color: yellow;
+}
+input {
+  color: green;
+}
+input::placeholder {
+  color: red;
+} */
+
+/* h2:hover {
+  color: red;
+}
+h2:active {
+  color: green;
+}
+input:focus {
+  background: yellow;
+}
+input:focus::placeholder {
+  color: red;
+}
+button:focus {
+  background: green;
+  color: #fff;
+} */
+
+/* ul :first-child {
+  color: red;
+}
+
+ul li:last-child {
+  color: green;
+}
+
+ul li:first-of-type {
+  color: blueviolet;
+} */
+
+/* ul li:nth-child(2n + 1) {
+  color: red;
+} */
+
+/* ul li:nth-of-type(2) {
+  color: red;
+} */
+
+/* ul li:not(.current, .active) {
+  color: red;
+} */
+
+/* input:checked + span {
+  color: red;
+}
+button:disabled {
+  color: gray;
+} */
+
+/* input:valid + span {
+  color: red;
+} */

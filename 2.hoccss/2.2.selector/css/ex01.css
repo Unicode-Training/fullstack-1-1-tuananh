@@ -1,0 +1,42 @@
+/* #title {
+  color: red;
+}
+.sub-title {
+  color: green;
+}
+h3 {
+  color: blueviolet;
+} */
+/* * {
+  color: red;
+} */
+
+/* .box h2 {
+  color: red;
+}
+.content h2 {
+  color: green;
+} */
+
+/* .box > h2 {
+  color: red;
+} */
+
+/* .products .item.large {
+  color: red;
+}
+
+.menu > li > a {
+  color: red;
+} */
+
+/* h2 ~ p {
+  background: yellow;
+}
+h2 ~ div p {
+  background: yellowgreen;
+} */
+
+h2 + p {
+  background: yellow;
+}
