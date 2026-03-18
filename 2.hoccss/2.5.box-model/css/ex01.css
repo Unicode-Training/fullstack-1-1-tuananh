@@ -1,0 +1,26 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: 0;
+  border: 0;
+}
+.box {
+  /* width: 0;
+  height: 0;
+  border: 50px solid;
+  border-color: transparent transparent blueviolet transparent;
+  border-top-width: 0; */
+  width: 100px;
+  min-width: 200px;
+  max-width: 500px;
+  border: 5px solid red;
+  padding: 20px;
+  height: 100%;
+}
+.container {
+  width: 500px;
+  height: 300px;
+  border: 5px solid green;
+  border-radius: 999px;
+}
