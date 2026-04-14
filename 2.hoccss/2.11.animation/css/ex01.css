@@ -1,0 +1,59 @@
+.box {
+  width: 300px;
+  height: 300px;
+  border: 1px solid red;
+  margin: 30px auto;
+  position: relative;
+}
+.box span {
+  width: 50px;
+  height: 50px;
+  background: green;
+  display: block;
+  position: absolute;
+  animation-name: moving;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes moving {
+  from {
+    top: 0;
+    left: 0;
+  }
+  50% {
+    top: 0;
+    left: 100%;
+    translate: -100% 0;
+  }
+  to {
+    top: 0;
+    left: 0;
+  }
+}
+/*
+Animation: Tạo kịch bản hiệu ứng theo yêu cầu, có thể cho chạy liên tục
+
+1. keyframes
+Lên kịch bản theo thời gian
+
+@keyframes ten-hieu-ung {
+    0%|from {
+        thuoctinh: giatri;
+    }
+    ... {
+        thuoctinh: giatri;
+    }
+    100%|to {
+        thuoctinh: giatri;
+    }
+}
+
+2. Thuộc tính animation
+- animation-name: ten-keyframe
+- animation-duration: s,ms
+- animation-delay: s,ms
+- animation-timing-function: s,ms
+- animation-iteration-count: number, infinite
+- animation: name duration delay timing-function iteration-count
+*/

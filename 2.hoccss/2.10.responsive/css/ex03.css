@@ -1,0 +1,35 @@
+.menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  width: 200px;
+  background: black;
+  color: #fff;
+  padding: 15px;
+  translate: -100%;
+  transition: translate 1s;
+}
+.overlay {
+  background: #00000076;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: 1s;
+  transition-property: opacity, visibility;
+}
+#menu-toggle:checked ~ .menu {
+  translate: 0;
+}
+#menu-toggle:checked ~ .overlay {
+  visibility: visible;
+  opacity: 1;
+}
+/*
+fadein, fadeout
+*/

@@ -23,6 +23,10 @@
 .modal {
   display: none;
 }
-input:checked ~ .modal {
+#modal-toggle:checked ~ .modal-1 {
+  display: block;
+}
+
+#modal-toggle2:checked ~ .modal-2 {
   display: block;
 }

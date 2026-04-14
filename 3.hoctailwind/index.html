@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+      };
+      document.addEventListener("DOMContentLoaded", () => {
+        const btn = document.querySelector(".js-theme");
+        btn.addEventListener("click", () => {
+          document.querySelector("html").classList.toggle("dark");
+        });
+      });
+    </script>
+    <style type="text/tailwindcss">
+      @theme {
+        --breakpoint-992: 992px;
+        --text-big: 50px;
+      }
+    </style>
+  </head>
+  <body class="dark:bg-[#333]">
+    <header class="flex justify-end">
+      <button class="bg-gray-500 px-3 py-2 text-white js-theme">
+        Theme Toggle
+      </button>
+    </header>
+    <section class="max-w-[1200px] mx-auto py-5 px-[15px] lg:px-0">
+      <h2 class="text-center mb-3 text-2xl dark:text-white">
+        Sản phẩm nổi bật
+      </h2>
+      <div class="flex flex-wrap gap-[15px]">
+        <div
+          class="w-full sm:w-[calc(100%/2-15px+15px/2)] md:w-[calc(100%/3-15px+15px/3)] lg:w-[calc(100%/4-15px+15px/4)] group/card"
+        >
+          <div class="relative overflow-hidden group/image">
+            <img
+              src="https://plus.unsplash.com/premium_photo-1725408144734-fd60f47ccc72?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+            />
+            <div
+              class="absolute bottom-0 translate-y-full group-hover/image:translate-y-0 left-0 right-0 flex justify-center gap-2 flex-wrap transition"
+            >
+              <div class="w-full">
+                <a
+                  href="#"
+                  class="block px-3 py-2 bg-blue-600 text-white w-[50%] mx-auto text-center dark:bg-[#333]"
+                >
+                  Add to card
+                </a>
+              </div>
+              <a
+                href="#"
+                class="block px-3 py-2 bg-blue-600 text-white dark:bg-[#333]"
+              >
+                Compare
+              </a>
+              <a
+                href="#"
+                class="block px-3 py-2 bg-blue-600 text-white dark:bg-[#333]"
+              >
+                View
+              </a>
+            </div>
+          </div>
+          <h3
+            class="text-xl mt-3 group-hover/card:text-red-600 dark:text-white"
+          >
+            Sản phẩm 1
+          </h3>
+        </div>
+        <div
+          class="w-full sm:w-[calc(100%/2-15px+15px/2)] md:w-[calc(100%/3-15px+15px/3)] lg:w-[calc(100%/4-15px+15px/4)] group/card"
+        >
+          <div class="relative overflow-hidden group/image">
+            <img
+              src="https://plus.unsplash.com/premium_photo-1725408144734-fd60f47ccc72?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+            />
+            <div
+              class="absolute bottom-0 translate-y-full group-hover/image:translate-y-0 left-0 right-0 flex justify-center gap-2 flex-wrap transition"
+            >
+              <div class="w-full">
+                <a
+                  href="#"
+                  class="block px-3 py-2 bg-blue-600 text-white w-[50%] mx-auto text-center dark:bg-[#333]"
+                >
+                  Add to card
+                </a>
+              </div>
+              <a
+                href="#"
+                class="block px-3 py-2 bg-blue-600 text-white dark:bg-[#333]"
+              >
+                Compare
+              </a>
+              <a
+                href="#"
+                class="block px-3 py-2 bg-blue-600 text-white dark:bg-[#333]"
+              >
+                View
+              </a>
+            </div>
+          </div>
+          <h3
+            class="text-xl mt-3 group-hover/card:text-red-600 dark:text-white"
+          >
+            Sản phẩm 1
+          </h3>
+        </div>
+        <div
+          class="w-full sm:w-[calc(100%/2-15px+15px/2)] md:w-[calc(100%/3-15px+15px/3)] lg:w-[calc(100%/4-15px+15px/4)] group/card"
+        >
+          <div class="relative overflow-hidden group/image">
+            <img
+              src="https://plus.unsplash.com/premium_photo-1725408144734-fd60f47ccc72?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+            />
+            <div
+              class="absolute bottom-0 translate-y-full group-hover/image:translate-y-0 left-0 right-0 flex justify-center gap-2 flex-wrap transition"
+            >
+              <div class="w-full">
+                <a
+                  href="#"
+                  class="block px-3 py-2 bg-blue-600 text-white w-[50%] mx-auto text-center dark:bg-[#333]"
+                >
+                  Add to card
+                </a>
+              </div>
+              <a
+                href="#"
+                class="block px-3 py-2 bg-blue-600 text-white dark:bg-[#333]"
+              >
+                Compare
+              </a>
+              <a
+                href="#"
+                class="block px-3 py-2 bg-blue-600 text-white dark:bg-[#333]"
+              >
+                View
+              </a>
+            </div>
+          </div>
+          <h3
+            class="text-xl mt-3 group-hover/card:text-red-600 dark:text-white"
+          >
+            Sản phẩm 1
+          </h3>
+        </div>
+        <div
+          class="w-full sm:w-[calc(100%/2-15px+15px/2)] md:w-[calc(100%/3-15px+15px/3)] lg:w-[calc(100%/4-15px+15px/4)] group/card"
+        >
+          <div class="relative overflow-hidden group/image">
+            <img
+              src="https://plus.unsplash.com/premium_photo-1725408144734-fd60f47ccc72?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+            />
+            <div
+              class="absolute bottom-0 translate-y-full group-hover/image:translate-y-0 left-0 right-0 flex justify-center gap-2 flex-wrap transition"
+            >
+              <div class="w-full">
+                <a
+                  href="#"
+                  class="block px-3 py-2 bg-blue-600 text-white w-[50%] mx-auto text-center dark:bg-[#333]"
+                >
+                  Add to card
+                </a>
+              </div>
+              <a
+                href="#"
+                class="block px-3 py-2 bg-blue-600 text-white dark:bg-[#333]"
+              >
+                Compare
+              </a>
+              <a
+                href="#"
+                class="block px-3 py-2 bg-blue-600 text-white dark:bg-[#333]"
+              >
+                View
+              </a>
+            </div>
+          </div>
+          <h3
+            class="text-xl mt-3 group-hover/card:text-red-600 dark:text-white"
+          >
+            Sản phẩm 1
+          </h3>
+        </div>
+        <div
+          class="w-full sm:w-[calc(100%/2-15px+15px/2)] md:w-[calc(100%/3-15px+15px/3)] lg:w-[calc(100%/4-15px+15px/4)] group/card"
+        >
+          <div class="relative overflow-hidden group/image">
+            <img
+              src="https://plus.unsplash.com/premium_photo-1725408144734-fd60f47ccc72?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+            />
+            <div
+              class="absolute bottom-0 translate-y-full group-hover/image:translate-y-0 left-0 right-0 flex justify-center gap-2 flex-wrap transition"
+            >
+              <div class="w-full">
+                <a
+                  href="#"
+                  class="block px-3 py-2 bg-blue-600 text-white w-[50%] mx-auto text-center dark:bg-[#333]"
+                >
+                  Add to card
+                </a>
+              </div>
+              <a
+                href="#"
+                class="block px-3 py-2 bg-blue-600 text-white dark:bg-[#333]"
+              >
+                Compare
+              </a>
+              <a
+                href="#"
+                class="block px-3 py-2 bg-blue-600 text-white dark:bg-[#333]"
+              >
+                View
+              </a>
+            </div>
+          </div>
+          <h3
+            class="text-xl mt-3 group-hover/card:text-red-600 dark:text-white"
+          >
+            Sản phẩm 1
+          </h3>
+        </div>
+        <div
+          class="w-full sm:w-[calc(100%/2-15px+15px/2)] md:w-[calc(100%/3-15px+15px/3)] lg:w-[calc(100%/4-15px+15px/4)] group/card"
+        >
+          <div class="relative overflow-hidden group/image">
+            <img
+              src="https://plus.unsplash.com/premium_photo-1725408144734-fd60f47ccc72?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+            />
+            <div
+              class="absolute bottom-0 translate-y-full group-hover/image:translate-y-0 left-0 right-0 flex justify-center gap-2 flex-wrap transition"
+            >
+              <div class="w-full">
+                <a
+                  href="#"
+                  class="block px-3 py-2 bg-blue-600 text-white w-[50%] mx-auto text-center dark:bg-[#333]"
+                >
+                  Add to card
+                </a>
+              </div>
+              <a
+                href="#"
+                class="block px-3 py-2 bg-blue-600 text-white dark:bg-[#333]"
+              >
+                Compare
+              </a>
+              <a
+                href="#"
+                class="block px-3 py-2 bg-blue-600 text-white dark:bg-[#333]"
+              >
+                View
+              </a>
+            </div>
+          </div>
+          <h3
+            class="text-xl mt-3 group-hover/card:text-red-600 dark:text-white"
+          >
+            Sản phẩm 1
+          </h3>
+        </div>
+        <div
+          class="w-full sm:w-[calc(100%/2-15px+15px/2)] md:w-[calc(100%/3-15px+15px/3)] lg:w-[calc(100%/4-15px+15px/4)] group/card"
+        >
+          <div class="relative overflow-hidden group/image">
+            <img
+              src="https://plus.unsplash.com/premium_photo-1725408144734-fd60f47ccc72?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+            />
+            <div
+              class="absolute bottom-0 translate-y-full group-hover/image:translate-y-0 left-0 right-0 flex justify-center gap-2 flex-wrap transition"
+            >
+              <div class="w-full">
+                <a
+                  href="#"
+                  class="block px-3 py-2 bg-blue-600 text-white w-[50%] mx-auto text-center dark:bg-[#333]"
+                >
+                  Add to card
+                </a>
+              </div>
+              <a
+                href="#"
+                class="block px-3 py-2 bg-blue-600 text-white dark:bg-[#333]"
+              >
+                Compare
+              </a>
+              <a
+                href="#"
+                class="block px-3 py-2 bg-blue-600 text-white dark:bg-[#333]"
+              >
+                View
+              </a>
+            </div>
+          </div>
+          <h3
+            class="text-xl mt-3 group-hover/card:text-red-600 dark:text-white"
+          >
+            Sản phẩm 1
+          </h3>
+        </div>
+        <div
+          class="w-full sm:w-[calc(100%/2-15px+15px/2)] md:w-[calc(100%/3-15px+15px/3)] lg:w-[calc(100%/4-15px+15px/4)] group/card"
+        >
+          <div class="relative overflow-hidden group/image">
+            <img
+              src="https://plus.unsplash.com/premium_photo-1725408144734-fd60f47ccc72?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+            />
+            <div
+              class="absolute bottom-0 translate-y-full group-hover/image:translate-y-0 left-0 right-0 flex justify-center gap-2 flex-wrap transition"
+            >
+              <div class="w-full">
+                <a
+                  href="#"
+                  class="block px-3 py-2 bg-blue-600 text-white w-[50%] mx-auto text-center dark:bg-[#333]"
+                >
+                  Add to card
+                </a>
+              </div>
+              <a
+                href="#"
+                class="block px-3 py-2 bg-blue-600 text-white dark:bg-[#333]"
+              >
+                Compare
+              </a>
+              <a
+                href="#"
+                class="block px-3 py-2 bg-blue-600 text-white dark:bg-[#333]"
+              >
+                View
+              </a>
+            </div>
+          </div>
+          <h3
+            class="text-xl mt-3 group-hover/card:text-red-600 dark:text-white"
+          >
+            Sản phẩm 1
+          </h3>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.box {
+  border: 1px solid red;
+  height: 300px;
+}
+.box h2 {
+  /* transition-property: padding-left;
+  transition-duration: 4s;
+  transition-timing-function: linear; */
+  transition: padding-left 4s linear;
+}
+.box:hover h2 {
+  padding-left: 200px;
+}
+
+/*
+Transition: Delay quá trình chuyển động của các thuộc tính css -> tạo thành hiệu ứng
+Lưu ý: Chỉ áp dụng với các thuộc tính có giá trị là số
+
+transition-property: tenthuoctinh1, tenthuoctinh2,...
+
+transition-duration: thoigian (s, ms)
+
+transition-delay: thoigian (s,ms)
+
+transition-timing-function: Quyết định tốc trên mỗi quảng đường di chuyển
+- ease: Chậm, nhanh, chậm
+- ease-in: Chậm, nhanh
+- ease-out: Nhanh, chậm
+- ease-in-out: Chậm, nhanh, chậm
+- linear: Tốc độ đều
+
+transition: property duration delay timing-function
+*/
