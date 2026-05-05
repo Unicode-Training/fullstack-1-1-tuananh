@@ -215,10 +215,10 @@ console.log(Array.prototype);
 // - Duyệt mảng giống forEach
 // - Trả về mảng mới
 // - Phần tử của mảng mới sẽ là phần tử của mảng ban đầu thỏa mãn điều kiện truthy trong callback
-const numbers = [1, 2, 3, 4, 5, 6, 7];
-const newArr = numbers.filter((value, index) => {
-  console.log(value, index);
-  //   return value % 2 === 0;
-  return index;
-});
-console.log(newArr);
+// const numbers = [1, 2, 3, 4, 5, 6, 7];
+// const newArr = numbers.filter((value, index) => {
+//   console.log(value, index);
+//   //   return value % 2 === 0;
+//   return index;
+// });
+// console.log(newArr);
