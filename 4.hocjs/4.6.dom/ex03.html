@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .chatbox {
+        width: 250px;
+        position: fixed;
+        right: 10px;
+        bottom: 10px;
+        border: 1px solid #ddd;
+      }
+      .chatbox .chatbox-heading {
+        background: blueviolet;
+        display: flex;
+        color: #fff;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+      }
+      .chatbox .chatbox-heading h2 {
+        font-size: 1.2rem;
+      }
+      .chatbox-body {
+        padding: 10px;
+        display: none;
+      }
+      .chatbox-body.show {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="chatbox">
+      <div class="chatbox-heading">
+        <h2>Chat với chúng tôi</h2>
+        <span>Close</span>
+      </div>
+      <div class="chatbox-body">
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error quis
+          possimus perferendis corporis obcaecati atque id quisquam dolorem fuga
+          quasi repellendus, officiis voluptas eum ad natus pariatur officia
+          dicta doloremque!
+        </p>
+      </div>
+    </div>
+    <script src="js/ex03.js"></script>
+  </body>
+</html>

@@ -138,15 +138,15 @@
 // boxEl.classList.toggle('open');
 // console.log(boxEl.classList.contains('box-border'));
 
-const list = document.querySelectorAll('ul li');
-list.forEach((item) => {
-    item.addEventListener('click', () => {
-        const activeItem = document.querySelector('.active');
+// const list = document.querySelectorAll('ul li');
+// list.forEach((item) => {
+//     item.addEventListener('click', () => {
+//         const activeItem = document.querySelector('.active');
 
-        item.classList.toggle('active');
+//         item.classList.toggle('active');
 
-        if (activeItem) {
-            activeItem.classList.remove('active');
-        }
-    });
-})
+//         if (activeItem) {
+//             activeItem.classList.remove('active');
+//         }
+//     });
+// })
