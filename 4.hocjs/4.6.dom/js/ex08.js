@@ -18,6 +18,11 @@
 // });
 const box = document.querySelector('.box');
 const items = document.querySelectorAll('.item');
+const contextMenu = document.querySelector('.context-menu');
+const modal = document.querySelector('.modal');
+const modalOverlay = modal.querySelector('.modal-overlay');
+const form = document.querySelector('form');
+const input = document.querySelector('input');
 items.forEach((item) => {
     const upBtn = item.querySelector('.up');
     const downBtn = item.querySelector('.down');
@@ -44,11 +49,18 @@ items.forEach((item) => {
     })
 })
 
-document.addEventListener('click', () => {
+document.addEventListener('click', (e) => {
     const itemSelected = document.querySelector('.selected');
-    if (itemSelected) {
+    if (itemSelected && !contextMenu.contains(e.target) && !modal.contains(e.target)) {
         itemSelected.classList.remove('selected')
     }
+    if (!contextMenu.contains(e.target)) {
+
+        Object.assign(contextMenu.style, {
+            display: 'none'
+        })
+    }
+
 });
 
 document.addEventListener('keydown', (e) => {
@@ -59,4 +71,51 @@ document.addEventListener('keydown', (e) => {
         itemClone.classList.remove('selected');
         box.insertBefore(itemClone, itemSelected.nextElementSibling);
     }
+})
+
+box.addEventListener('contextmenu', (e) => {
+    e.preventDefault();
+    const itemSelected = document.querySelector('.selected');
+    if (e.target.contains(itemSelected)) {
+        Object.assign(contextMenu.style, {
+            top: `${e.clientY}px`,
+            left: `${e.clientX + 20}px`,
+            display: 'inline-block'
+        })
+    }
+})
+
+contextMenu.addEventListener('click', (e) => {
+    const itemSelected = document.querySelector('.selected');
+    if (e.target.classList.contains('rename')) {
+
+        modal.classList.add('show');
+        Object.assign(contextMenu.style, {
+            display: 'none'
+        });
+
+        const itemValue = itemSelected.childNodes[0].data.trim();
+
+        input.value = itemValue;
+    }
+
+    if (e.target.classList.contains('delete')) {
+        itemSelected.remove();
+        Object.assign(contextMenu.style, {
+            display: 'none'
+        });
+    }
+});
+
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const itemSelected = document.querySelector('.selected');
+    itemSelected.childNodes[0].data = input.value + "\n";
+    modal.classList.remove('show');
+    itemSelected.classList.remove('selected');
+})
+
+modalOverlay.addEventListener('click', () => {
+    modal.classList.remove('show');
+    input.value = '';
 })
