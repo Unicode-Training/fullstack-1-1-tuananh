@@ -9,44 +9,22 @@
   <body>
     <main class="py-3 max-w-[90%] mx-auto">
       <h2 class="text-3xl text-center">Danh sách sản phẩm</h2>
+      <button class="js-add-btn px-3 py-1 bg-green-600 text-white">
+        Thêm mới
+      </button>
+      <input
+        type="search"
+        class="js-search px-3 py-1 outline-none border border-[#ddd] my-3 w-full"
+        placeholder="Search..."
+      />
       <div class="js-product-list flex flex-wrap my-3 -mx-3"></div>
+      <div class="js-pagination flex flex-wrap gap-2"></div>
     </main>
     <div class="js-modal hidden">
       <div
-        class="absolute left-0 right-0 top-[10%] max-w-3/4 mx-auto bg-white border border-[#ddd] p-3 z-50"
+        class="js-modal-content absolute left-0 right-0 top-[10%] max-w-3/4 mx-auto bg-white border border-[#ddd] p-3 z-50"
       >
-        <h2 class="text-xl mb-2">Tên sản phẩm</h2>
-        <p class="mb-2">Giá: 12000</p>
-        <img
-          src="https://fastly.picsum.photos/id/652/536/354.jpg?hmac=zWDXs5Y94rKgs39sJnp6k2PJZLCmeeUEXW3V9O1yvZQ"
-          alt=""
-        />
-        <div class="flex gap-2 mt-3">
-          <div class="w-[100px]">
-            <img
-              src="https://fastly.picsum.photos/id/780/536/354.jpg?hmac=0pNfPPgLlCM183BSFbD5J81inkF6WtTnzw5AaKlLZFY"
-              alt=""
-            />
-          </div>
-          <div class="w-[100px]">
-            <img
-              src="https://fastly.picsum.photos/id/780/536/354.jpg?hmac=0pNfPPgLlCM183BSFbD5J81inkF6WtTnzw5AaKlLZFY"
-              alt=""
-            />
-          </div>
-          <div class="w-[100px]">
-            <img
-              src="https://fastly.picsum.photos/id/780/536/354.jpg?hmac=0pNfPPgLlCM183BSFbD5J81inkF6WtTnzw5AaKlLZFY"
-              alt=""
-            />
-          </div>
-        </div>
-        <p class="mt-3">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab,
-          voluptates sed quidem nobis harum doloremque at odit tempore
-          necessitatibus debitis repellendus commodi recusandae non porro id ea
-          sequi quos similique.
-        </p>
+        <span class="text-2xl text-center block">Loading...</span>
       </div>
       <div class="js-modal-overlay absolute inset-0 z-40 bg-black/50"></div>
     </div>
